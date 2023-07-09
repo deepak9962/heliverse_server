@@ -2,7 +2,7 @@ const express = require('express')
 const Team = require('../models/team')
 const router = express.Router()
 
-const baseUrl = 'http://localhost:8080/api/team'
+const baseUrl = 'https://api-heliverse.onrender.com/api/team'
 
 router.get('/team', async (req, res) => {
     try {

@@ -2,7 +2,7 @@ const express = require('express')
 const User = require('../models/user')
 const router = express.Router()
 
-const baseUrl = 'http://localhost:8080/api/users?'
+const baseUrl = 'https://api-heliverse.onrender.com/api/users?'
 
 router.get('/users', async (req, res) => {
     let query = req.query
