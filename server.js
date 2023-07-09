@@ -28,9 +28,10 @@ mongoose.connect(process.env.DATABASE_URL).then(() => {
     console.log(err)
 })
 
-// setInterval(() => {
-//     console.log("hellow");
-// }, 10000);
+setInterval(async () => {
+    const data = await axios.get(process.env.KR);
+    console.log(await data.statusText + " " + new Date().getDate());
+}, (1000 * 60) * 10);
 
 app.use('/api', userRouter)
 app.use('/api', teamRouter)

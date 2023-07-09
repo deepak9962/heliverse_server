@@ -163,4 +163,8 @@ router.delete('/users/:id', async (req, res) => {
     }
 })
 
+router.get('/ka', (req, res) => {
+    res.sendStatus(200);
+})
+
 module.exports = router
