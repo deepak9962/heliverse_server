@@ -10,6 +10,7 @@ const session = require('express-session')
 const mongoose = require('mongoose').default
 const userRouter = require('./routes/user')
 const teamRouter = require('./routes/team')
+const { default: axios } = require('axios')
 
 const app = express()
 
