@@ -1,0 +1,63 @@
+GET http://localhost:8080/api/users?q=Lo&domain=Sales
+
+###
+
+GET http://localhost:8080/api/users/64a8087c4e408b677a8025db
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "first_name": "user",
+    "last_name": "user",
+    "email": "user@email",
+    "gender": "unknown",
+    "avatar": "",
+    "domain": "IT",
+    "available": false
+}
+
+###
+
+PUT http://localhost:8080/api/users/64a82522df89ae6540382201
+Content-Type: application/json
+
+{
+    "first_name": "user",
+    "last_name": "sama",
+    "email": "user@email",
+    "gender": "male",
+    "avatar": "",
+    "domain": "IT",
+    "available": true
+}
+
+###
+
+DELETE http://localhost:8080/api/users/64a82cec4033dea20c5333cc
+
+###
+
+GET http://localhost:8080/api/team
+
+###
+
+GET http://localhost:8080/api/team/64a85d1f8b3cfa1b29290835
+
+###
+
+POST http://localhost:8080/api/team
+Content-Type: application/json
+
+{
+    "teamName": "Marketing Teams",
+    "users": [
+        {"_id": "64a8087c4e408b677a802424"},
+        {"_id": "64a8087c4e408b677a802435"},
+        {"_id": "64a8087c4e408b677a802439"},
+        {"_id": "64a8087c4e408b677a802443"},
+        {"_id": "64a8087c4e408b677a802444"}
+    ]
+}
